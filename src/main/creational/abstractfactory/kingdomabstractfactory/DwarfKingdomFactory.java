@@ -1,6 +1,6 @@
 package main.creational.abstractfactory.kingdomabstractfactory;
 
-public class DwarfKingtomFactory implements KingdomAbstractFactory {
+public class DwarfKingdomFactory implements KingdomAbstractFactory {
   @Override
   public Palace createPalace() {
     return new DwarfDwelling();
