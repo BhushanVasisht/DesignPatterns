@@ -1,7 +1,7 @@
 package test.creational.abstractfactory.kingdomabstractfactor;
 
 import main.creational.abstractfactory.kingdomabstractfactory.Army;
-import main.creational.abstractfactory.kingdomabstractfactory.DwarfKingtomFactory;
+import main.creational.abstractfactory.kingdomabstractfactory.DwarfKingdomFactory;
 import main.creational.abstractfactory.kingdomabstractfactory.ElfKingdomFactory;
 import main.creational.abstractfactory.kingdomabstractfactory.HumanKingdomFactory;
 import main.creational.abstractfactory.kingdomabstractfactory.KingdomAbstractFactory;
@@ -19,7 +19,7 @@ public class KingdomAbstractFactoryTest {
     else System.out.println("No elf army");
 
     //Dwarf Kingdom
-    abstractFactory = new DwarfKingtomFactory();
+    abstractFactory = new DwarfKingdomFactory();
     abstractFactory.createPalace().getDescription();
     abstractFactory.createRuler().getDescription();
     Army dwarfArmy = abstractFactory.createArmy();
